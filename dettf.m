@@ -1,5 +1,5 @@
 function detfinal = dettf(M)
-%função para fazer um determinante de matriz de NxN
+%funÃ§Ã£o para fazer um determinante de matriz de NxN
 detfinal = 0;
 [linhas, colunas] = size(M);
     for i = 1:colunas
@@ -12,7 +12,7 @@ detfinal = 0;
             d = dettf(matrizauxiliar); 
             detfinal = detfinal + M(1,i)*sinal*d;
         else
-            detfinal = det(M(1,1));
+            detfinal = minreal(M(1,1));
         end
     end
 end
